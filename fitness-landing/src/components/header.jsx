@@ -2,23 +2,23 @@ import React from 'react'
 
 function Header() {
 	return (
-		<header className=''>
-			<div className='container mx-auto flex justify-between items-center'>
-				<h1 className=''>Фитнес-тренер Эльдар</h1>
+		<header className='text-2xl'>
+			<div className='container mx-auto flex justify-between items-center p-2'>
+				<h1  >Персональный тренер Эльдар </h1>
 				<nav>
 					<ul className='flex space-x-4'>
 						<li>
-							<a href='#about' className='hover:underline'>
+							<a href='#about' className='hover:text-red-500'>
 								Обо мне
 							</a>
 						</li>
 						<li>
-							<a href='#services' className='hover:underline'>
+							<a href='#services' className='hover:text-red-500'>
 								Услуги
 							</a>
 						</li>
 						<li>
-							<a href='#contact' className='hover:underline'>
+							<a href='#contact' className='hover:text-red-500'>
 								Контакты
 							</a>
 						</li>

@@ -3,14 +3,15 @@ import React from 'react'
 function Hero() {
 	return (
 		<section
-			className='bg-cover bg-center h-screen'
+			className='bg-cover bg-center h-screen p-4'
 		>
-			<div className=' h-full flex items-center justify-center'>
-				<h2 className='text-white text-4xl font-bold'>
-					Добро пожаловать в мир фитнеса!
+			<div className=' flex items-center justify-center mt-28'>
+				<h2 className='text-white text-6xl font-bold w-1/2 '>
+					Добро пожаловать в мир <p className='text-red-500'>фитнеса!</p>
 				</h2>
-				<h1 className='text-red-500 text-3xl'>Тестовый заголовок</h1>
+				<div className='bg-white h-52 w-1/2'></div>
 			</div>
+
 		</section>
 	)
 }
