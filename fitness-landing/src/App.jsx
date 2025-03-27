@@ -8,15 +8,19 @@ import Services from './components/services'
 
 function App() {
 	return (
-		<div className='font-sans text-gray-900 bg-opacity-70 bg-cover bg-center bg-no-repeat bg-[url("./assets/background.jpg")] '>
-			<Header />
-			<main>
-				<Hero />
-				<About />
-				<Services />
-				<Contact />
-			</main>
-			<Footer />
+		<div className=' bg-cover bg-center bg-no-repeat bg-[url("./assets/background.jpg")] relative'>
+			<div className='bg-black bg-opacity-50 h-full w-full absolute top-0 left-0 z-0'></div>
+			<div className='relative z-10 p-4'>
+				<Header />
+				<main>
+					<Hero />
+					<About />
+					<Services />
+					<Contact />
+				</main>
+				<Footer />
+			</div>
+
 		</div>
 	)
 }

@@ -9,7 +9,10 @@ module.exports = {
         publicPath: '/',
     },
     resolve: {
-        extensions: ['.js', '.jsx'], // чтобы webpack мог импортировать без указания расширения
+        extensions: ['.js', '.jsx'],
+        alias: {
+            '~': path.resolve(__dirname, 'src')
+        }// чтобы webpack мог импортировать без указания расширения
     },
     module: {
         rules: [
@@ -27,6 +30,10 @@ module.exports = {
                     'css-loader',     // позволяет импортировать CSS-файлы
                     'postcss-loader', // обрабатывает CSS через PostCSS (и Tailwind)
                 ],
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/i,
+                type: 'asset/resource',
             },
             // можно добавить правила для изображений, шрифтов и т.д.
         ],
