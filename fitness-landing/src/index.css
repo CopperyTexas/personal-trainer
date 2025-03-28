@@ -6,3 +6,17 @@ body {
   color: white;
   background-color: black;
 }
+/* Стили для кастомных стрелок */
+.swiper-button-prev,
+.swiper-button-next {
+  @apply bg-gray-400 bg-opacity-75 text-red-500 rounded-full w-16 h-16 flex items-center justify-center text-xs;
+}
+
+/* Стили для пагинации (маленьких кружков) */
+.swiper-pagination-bullet {
+  @apply bg-gray-400 w-3.5 h-3.5 opacity-100;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-red-500;
+}
