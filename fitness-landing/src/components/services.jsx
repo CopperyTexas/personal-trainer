@@ -23,7 +23,7 @@ const Services = () => {
               </h3>
               <p className="text-white text-xl flex-grow">{description}</p>
               <div className="mt-6 text-2xl font-bold text-white">
-                Стоимость: {price}₽
+                Стоимость: {price}
               </div>
             </div>
           ))}
