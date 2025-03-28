@@ -1,52 +1,51 @@
 import React from 'react';
+import { FaInstagram, FaTelegramPlane, FaVk } from 'react-icons/fa';
 
-function Contact() {
-    return (
-        <section id="contact" className="py-12 container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-4">Связаться со мной</h2>
-            <form className="max-w-lg mx-auto">
-                <div className="mb-4">
-                    <label htmlFor="name" className="block text-lg mb-2">
-                        Имя:
-                    </label>
-                    <input
-                        type="text"
-                        id="name"
-                        className="w-full p-2 border rounded"
-                        placeholder="Ваше имя"
-                    />
-                </div>
-                <div className="mb-4">
-                    <label htmlFor="email" className="block text-lg mb-2">
-                        Email:
-                    </label>
-                    <input
-                        type="email"
-                        id="email"
-                        className="w-full p-2 border rounded"
-                        placeholder="Ваш email"
-                    />
-                </div>
-                <div className="mb-4">
-                    <label htmlFor="message" className="block text-lg mb-2">
-                        Сообщение:
-                    </label>
-                    <textarea
-                        id="message"
-                        className="w-full p-2 border rounded"
-                        rows="4"
-                        placeholder="Ваше сообщение"
-                    ></textarea>
-                </div>
-                <button
-                    type="submit"
-                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-                >
-                    Отправить
-                </button>
-            </form>
-        </section>
-    );
+export default function Contacts() {
+  return (
+    <section className="py-16 " id="contacts">
+      <div className="container mx-auto px-4">
+        <div className="text-center">
+          <h2 className="text-5xl font-bold mb-6 border-b-4 inline-block border-red-500">
+            Готов изменить свою жизнь?
+          </h2>
+        </div>
+        <p className="text-center text-white text-xl mb-8 max-w-2xl mx-auto">
+          Напиши мне прямо сейчас, и вместе мы начнём путь к телу твоей мечты! Я
+          всегда открыт к общению и с радостью отвечу на все твои вопросы.
+        </p>
+        <div className="flex flex-col items-center justify-center gap-6 md:flex-row">
+          <a
+            href="https://t.me/imshirovich_fit"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-white hover:text-blue-500 transition"
+          >
+            <FaTelegramPlane size={30} />
+            <span className="text-lg">Telegram</span>
+          </a>
+
+          <a
+            href="https://instagram.com/imshirovich_fit"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-white hover:text-pink-500 transition"
+          >
+            <FaInstagram size={30} />
+            <span className="text-lg">Instagram</span>
+          </a>
+
+          <a
+            href="https://vk.com/Imshirovich_fit"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-white hover:text-blue-700 transition"
+          >
+            <FaVk size={30} />
+            <span className="text-lg">ВКонтакте</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
 }
-
-export default Contact;

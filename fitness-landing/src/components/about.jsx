@@ -55,12 +55,6 @@ function About() {
             целей и даже больше.
           </p>
         </div>
-
-        <div className="text-center">
-          <button className="px-8 py-4 bg-red-500 text-white rounded-xl text-xl hover:bg-orange-600 transition">
-            Напиши мне и начни сейчас!
-          </button>
-        </div>
       </div>
     </section>
   );
