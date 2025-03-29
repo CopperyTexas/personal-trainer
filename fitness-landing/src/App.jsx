@@ -11,7 +11,7 @@ function App() {
   return (
     <div className=' bg-cover bg-center bg-no-repeat bg-[url("./assets/background.jpg")] relative'>
       <div className="bg-black bg-opacity-50 h-full w-full absolute top-0 left-0 z-0"></div>
-      <div className="relative z-10 p-4">
+      <div className="relative z-10 p-4 m-auto">
         <Header />
         <main>
           <Hero />
